@@ -1,0 +1,46 @@
+// 导入变量
+@import './variables.scss';
+
+// CSS 变量定义（用于 JS 访问）
+:root {
+  // 颜色
+  --primary-color: #{$primary-color};
+  --success-color: #{$success-color};
+  --warning-color: #{$warning-color};
+  --danger-color: #{$danger-color};
+  --info-color: #{$info-color};
+
+  --text-primary: #{$text-primary};
+  --text-regular: #{$text-regular};
+  --text-secondary: #{$text-secondary};
+  --text-placeholder: #{$text-placeholder};
+
+  --border-base: #{$border-base};
+  --border-light: #{$border-light};
+  --border-lighter: #{$border-lighter};
+  --border-extra-light: #{$border-extra-light};
+
+  --bg-color: #{$bg-color};
+  --bg-page: #{$bg-page};
+
+  // 间距
+  --spacing-xs: #{$spacing-xs};
+  --spacing-sm: #{$spacing-sm};
+  --spacing-md: #{$spacing-md};
+  --spacing-lg: #{$spacing-lg};
+  --spacing-xl: #{$spacing-xl};
+
+  // 圆角
+  --border-radius-base: #{$border-radius-base};
+  --border-radius-small: #{$border-radius-small};
+  --border-radius-large: #{$border-radius-large};
+  --border-radius-round: #{$border-radius-round};
+  --border-radius-circle: #{$border-radius-circle};
+}
+
+// 导入重置样式
+@import './reset.scss';
+
+// 导入工具类
+@import './utilities.scss';
+

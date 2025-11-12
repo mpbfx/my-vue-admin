@@ -1,0 +1,281 @@
+// 布局工具类
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-start {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.flex-end {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+// 间距工具类
+@each $size in (xs, sm, md, lg, xl) {
+  .m-#{$size} {
+    margin: var(--spacing-#{$size});
+  }
+  .mt-#{$size} {
+    margin-top: var(--spacing-#{$size});
+  }
+  .mr-#{$size} {
+    margin-right: var(--spacing-#{$size});
+  }
+  .mb-#{$size} {
+    margin-bottom: var(--spacing-#{$size});
+  }
+  .ml-#{$size} {
+    margin-left: var(--spacing-#{$size});
+  }
+  .mx-#{$size} {
+    margin-left: var(--spacing-#{$size});
+    margin-right: var(--spacing-#{$size});
+  }
+  .my-#{$size} {
+    margin-top: var(--spacing-#{$size});
+    margin-bottom: var(--spacing-#{$size});
+  }
+
+  .p-#{$size} {
+    padding: var(--spacing-#{$size});
+  }
+  .pt-#{$size} {
+    padding-top: var(--spacing-#{$size});
+  }
+  .pr-#{$size} {
+    padding-right: var(--spacing-#{$size});
+  }
+  .pb-#{$size} {
+    padding-bottom: var(--spacing-#{$size});
+  }
+  .pl-#{$size} {
+    padding-left: var(--spacing-#{$size});
+  }
+  .px-#{$size} {
+    padding-left: var(--spacing-#{$size});
+    padding-right: var(--spacing-#{$size});
+  }
+  .py-#{$size} {
+    padding-top: var(--spacing-#{$size});
+    padding-bottom: var(--spacing-#{$size});
+  }
+}
+
+// 文本工具类
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-primary {
+  color: $text-primary;
+}
+
+.text-regular {
+  color: $text-regular;
+}
+
+.text-secondary {
+  color: $text-secondary;
+}
+
+.text-placeholder {
+  color: $text-placeholder;
+}
+
+.text-small {
+  font-size: $font-size-small;
+}
+
+.text-base {
+  font-size: $font-size-base;
+}
+
+.text-large {
+  font-size: $font-size-large;
+}
+
+.text-xl {
+  font-size: $font-size-extra-large;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.font-normal {
+  font-weight: normal;
+}
+
+// 文本截断
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.text-ellipsis-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// 宽度高度
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+// 圆角
+.rounded {
+  border-radius: $border-radius-base;
+}
+
+.rounded-sm {
+  border-radius: $border-radius-small;
+}
+
+.rounded-lg {
+  border-radius: $border-radius-large;
+}
+
+.rounded-full {
+  border-radius: $border-radius-round;
+}
+
+.rounded-circle {
+  border-radius: $border-radius-circle;
+}
+
+// 阴影
+.shadow {
+  box-shadow: $box-shadow-base;
+}
+
+.shadow-light {
+  box-shadow: $box-shadow-light;
+}
+
+.shadow-dark {
+  box-shadow: $box-shadow-dark;
+}
+
+.shadow-none {
+  box-shadow: none;
+}
+
+// 边框
+.border {
+  border: 1px solid $border-base;
+}
+
+.border-light {
+  border: 1px solid $border-light;
+}
+
+.border-lighter {
+  border: 1px solid $border-lighter;
+}
+
+// 光标
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.cursor-not-allowed {
+  cursor: not-allowed;
+}
+
+// 显示隐藏
+.hidden {
+  display: none;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+// 溢出
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.overflow-scroll {
+  overflow: scroll;
+}
+
+// 定位
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.sticky {
+  position: sticky;
+}
+
